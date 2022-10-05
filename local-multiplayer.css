@@ -1,0 +1,77 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2A0944;
+}
+
+/* HEADER AND NAV SETTINGS */
+.title-text{
+    font-family: "Poppins";
+    font-weight: 700;
+    color: #FEC260;
+    font-size: 3rem;
+    margin-left: 5vh;
+    margin-top: 5vh;
+    margin-bottom: 6vh;
+}
+
+/* GRID CONTAINER */
+
+.grid-container{
+    margin: 0 auto;
+    display: grid;
+    width: 50%;
+    min-height: 70vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+/* GRID BORDERS */
+
+.grid{
+    border: 2px solid #A12568;
+}
+
+.grid:hover{
+    cursor: pointer;
+}
+
+.grid.one{
+    border-left: none;
+    border-top: none;
+}
+
+.grid.two{
+    border-top: none;
+}
+
+.grid.three{
+    border-top: none;
+    border-right: none;
+}
+
+.grid.four{
+    border-left: none;
+}
+
+.grid.six{
+    border-right: none;
+}
+
+.grid.seven{
+    border-left: none;
+    border-bottom: none;
+}
+
+.grid.eight{
+    border-bottom: none;
+}
+
+.grid.nine{
+    border-right: none;
+    border-bottom: none;
+}
