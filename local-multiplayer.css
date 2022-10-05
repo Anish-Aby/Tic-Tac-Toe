@@ -33,7 +33,9 @@ body{
 /* GRID BORDERS */
 
 .grid{
-    border: 2px solid #A12568;
+    border: 3px solid #A12568;
+    clip-path: circle(0.0% at 50% 0);
+    opacity: 0;
 }
 
 .grid:hover{

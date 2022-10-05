@@ -21,6 +21,9 @@ body {
     color: #FEC260;
     margin-top: 10vh;
     margin-bottom: 10vh;
+    transform: translate3d(0, -50px, 0);
+    opacity: 0;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
 }
 
 .title-text::before{
@@ -63,7 +66,9 @@ body {
     gap: 5vh;
     justify-content: center;
     align-items: center;
-    margin-bottom: 10vh;
+    margin: auto;
+    transform: translate3d(0, -50px, 0);
+    opacity: 0;
 }
 
 .local-multiplayer-button{
