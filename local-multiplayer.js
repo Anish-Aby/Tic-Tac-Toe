@@ -10,6 +10,10 @@ tl.to(".grid-container", {'clip-path': 'circle(111.8% at 50% 0%)', y : 0, opacit
 tl.to(".current-turn-container", {y: 0, opacity: 1, duration: 3}, 0)
 
 
+// USERNAME SECTION
+
+
+
 
 // GRID AND CURRENT PLAYER SECTION FOR LOCAL MULTIPLAYER
 let availableSelection = ["X", "O"];

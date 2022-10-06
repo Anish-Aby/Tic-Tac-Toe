@@ -1,0 +1,64 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #2A0944;
+}
+
+/* MAIN CONTAINER */
+.main-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.user-input-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10vh;
+    width: 50%;
+    min-height: 50vh;
+border-radius: 0px;
+background: #2A0944;
+box-shadow:  5px 5px 10px #1a062b,
+             -5px -5px 10px #3a0c5d;
+}
+
+.title-userinput{
+    font-family: "Poppins";
+    color: #A12568;
+    font-size: 5vh;
+    margin-left: 3vh;
+    margin-top: 3vh;
+}
+
+.player1-userinput{
+    font-family: "Kanit";
+    color: #FEC260;
+    font-size: 3vh;
+    margin-left: 3vh;
+    margin-top: 1vh;   
+}
+
+.input-player-x{
+    border: none;
+    background-color: #3a0c5d;
+    height: 4vh;
+    width: 70%;
+    margin-left: 3vh;
+    color: #FEC260;
+}
+
+.input-player-y{
+    border: none;
+    background-color: #3a0c5d;
+    height: 4vh;
+    width: 70%;
+    margin-left: 3vh;
+    color: #FEC260;
+}

@@ -21,7 +21,7 @@ body {
     font-size: 5rem;
     color: #FEC260;
     margin-top: 20vh;
-    margin-bottom: 20vh;
+    margin-bottom: 10vh;
     transform: translate3d(0, -50px, 0);
     opacity: 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);

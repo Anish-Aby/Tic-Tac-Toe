@@ -134,6 +134,14 @@ body{
     background-color: #A12568;
 }
 
+.player-name-container{
+    display: flex;
+    flex-direction: column;
+    font-family: "Poppins";
+    color: #FEC260;
+
+}
+
 /* GO BACK BUTTON */
 
 .go-back-container{
