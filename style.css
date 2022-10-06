@@ -6,6 +6,7 @@
 
 body {
     background-color: #2A0944;
+    overflow: hidden;
 }
 
 /* Making the Header */
@@ -19,8 +20,8 @@ body {
     font-weight: 700;
     font-size: 5rem;
     color: #FEC260;
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 20vh;
     transform: translate3d(0, -50px, 0);
     opacity: 0;
     clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
@@ -66,7 +67,6 @@ body {
     gap: 5vh;
     justify-content: center;
     align-items: center;
-    margin: auto;
     transform: translate3d(0, -50px, 0);
     opacity: 0;
 }
@@ -111,4 +111,46 @@ body {
         background-color: #FEC260; 
         color: #3B185F;
     }
+}
+
+/* RANDOM BACKGROUND LETTERS */
+
+.random-background-container{
+    position: absolute;
+    top:-50vh;
+    left: -50vh;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+
+.random-background-container-two{
+    position: absolute;
+    top:-10vh;
+    left: -20vh;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+
+.random-background-container-three{
+    position: absolute;
+    top: 0;
+    left: 40vh;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+
+.random-background-container-four{
+    position: absolute;
+    top: 0;
+    left: 120vh;
+    z-index: -1;
+    transform: rotate(-45deg);
+}
+
+.random-background{
+    font-size: 50vh;
+    color: #2A0944;
+    font-family: "Kanit";
+    text-shadow: -1px -1px 0 #FEC260, 1px -1px 0 #FEC260, -1px 1px 0 #FEC260, 1px 1px 0 #FEC260;
+    opacity: 0;
 }
