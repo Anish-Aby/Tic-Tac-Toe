@@ -17,14 +17,54 @@
             <div class="title-userinput">
                 Pick a username:
             </div>
-            <div class="player1-userinput">
-                Player X: <input class="input-player-x">
-            </div>
-            <div class="player1-userinput">
-                Player Y: <input class="input-player-y">
-            </div>
+            <form action="local-multiplayer.html" onsubmit="setUsername()">
+                <div class="player1-userinput">
+                    <label> Player X: 
+                        <input name="playerOne" type="text" maxlength="15" minlength="1" id="player-one-username" class="input-player-x" placeholder="A" autofocus required autocomplete="off">
+                    </label>
+                </div>
+                <div class="player1-userinput">
+                    <label> Player Y:
+                        <input name="playerTwo" type="text" maxlength="15" minlength="1" id="player-two-username" class="input-player-y" placeholder="B" autofocus required autocomplete="off">
+                    </label>
+                </div>
+                <div class="play-button-container">
+                    <button type="submit" class="play-button">
+                          Play
+                    </button>
+                </div>
+            </form>
         </div>
       </div>  
+
+      <div class="random-background-container">
+        <div class="random-background">
+            XOXOXOX
+        </div>
+    </div>
+
+    <div class="random-background-container-two">
+        <div class="random-background">
+            XOXOXOX
+        </div>
+    </div>
+
+    <div class="random-background-container-three">
+        <div class="random-background">
+            XOXOXOX
+        </div>
+    </div>
+
+    <div class="random-background-container-four">
+        <div class="random-background">
+            XOXOXOX
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js" integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/CSSRulePlugin.min.js" integrity="sha512-WmIFc2KnjfdlxbNwOApiTUtM6TwCz985/6yKTfFqC8Nq7H/VUMfJ897tEGx6SKSxLQbxilffKEcaGhbtBhGmng==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="script.js"></script>
+    <script src="local-multiplayer.js"></script>
 </body>
 
 </html>

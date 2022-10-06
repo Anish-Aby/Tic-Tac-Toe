@@ -9,18 +9,27 @@ tl.to(".grid", {'clip-path': 'circle(111.8% at 50% 0%)', y : 0, opacity: 1, dura
 tl.to(".grid-container", {'clip-path': 'circle(111.8% at 50% 0%)', y : 0, opacity: 1, duration: 3}, 0)
 tl.to(".current-turn-container", {y: 0, opacity: 1, duration: 3}, 0)
 
-
-// USERNAME SECTION
-
-
-
-
 // GRID AND CURRENT PLAYER SECTION FOR LOCAL MULTIPLAYER
 let availableSelection = ["X", "O"];
 let currentSelection = availableSelection[0];
 
 let optionsOne = document.querySelector(".options-one");
 let optionsTwo = document.querySelector(".options-two");
+
+// USERNAMES 
+
+let playerOne = document.querySelector(".user-input-one");
+let playerTwo = document.querySelector(".user-input-two");
+let userNameArray = [];
+
+new URLSearchParams(window.location.search).forEach((value) => {
+    userNameArray.push(value);
+    console.log(userNameArray);
+})
+
+playerOne.innerHTML = userNameArray[0];
+playerTwo.innerHTML = userNameArray[1];
+
 
 optionsTwo.style.background = "#2A0944";
 
