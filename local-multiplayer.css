@@ -148,6 +148,8 @@ body{
     position: absolute;
     left: 10vh;
     bottom: 10vh;
+    transform: translateY(-150%);
+    opacity: 0;
 }
 
 .go-back-button{
@@ -186,6 +188,66 @@ body{
     }
     100%{
         transform: translate3d(0, 10%, 0);
+        border: 3px solid #A12568;
+        background-color: #FEC260; 
+        color: #3B185F;
+    }
+}
+
+
+/* RESULT CONTAINER */
+
+.result-container{
+    display: none;
+    position: absolute;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-height: 100vh;
+}
+
+.result-display{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    min-height: 80vh;
+    background-color: #3B185F;
+}
+
+.winner-display{
+    font-family: "Kanit";
+    font-size: 10vh;
+    color: #FEC260;
+}
+
+.result-buttons{
+    border: none;
+    position: relative;
+    font-family: "Kanit", sans-serif;
+    font-size: 400;
+    font-size: 2rem;
+    color: #3B185F;
+    padding: 1vh;
+    background-color: #A12568;
+    margin: 0 5vh;
+}
+
+
+.result-buttons:hover{
+    animation: goDowntwo 1s ease forwards;
+}
+
+@keyframes goDowntwo {
+    0% {
+        transform: translate3d(0, 0, 0);
+        border: 3px solid #A12568; 
+    }
+    100%{
+        transform: translate3d(0, -10%, 0);
         border: 3px solid #A12568;
         background-color: #FEC260; 
         color: #3B185F;

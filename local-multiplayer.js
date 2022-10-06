@@ -8,6 +8,7 @@ tl.to(".title-text", {'clip-path': 'polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%)'
 tl.to(".grid", {'clip-path': 'circle(111.8% at 50% 0%)', y : 0, opacity: 1, duration: 3}, 0)
 tl.to(".grid-container", {'clip-path': 'circle(111.8% at 50% 0%)', y : 0, opacity: 1, duration: 3}, 0)
 tl.to(".current-turn-container", {y: 0, opacity: 1, duration: 3}, 0)
+tl.to(".go-back-container", {y: 0, opacity: 1, duration: 3.3}, 0)
 
 // GRID AND CURRENT PLAYER SECTION FOR LOCAL MULTIPLAYER
 let availableSelection = ["X", "O"];
@@ -77,6 +78,8 @@ function checkForValue(currentGrid){
     let eight = document.getElementById("eight").innerHTML;
     let nine = document.getElementById("nine").innerHTML;
 
+    let winnerNameSpan = document.querySelector(".winner-span");
+
     let inputChoice = currentGrid.innerText;
     console.log(inputChoice);
 
@@ -84,42 +87,50 @@ function checkForValue(currentGrid){
         // ROW 1
         //  DIAGONAL
         if (one == "X" && five == "X" && nine == "X"){
-            alert("Player X wins");
+            winnerNameSpan.innerHTML = userNameArray[0];
+            displayResultContainer();
         }
         
         else if (three == "X" && five == "X" && seven == "X"){
-            alert("Player X wins");
+            winnerNameSpan.innerHTML = userNameArray[0];
+            displayResultContainer();
         }
 
         // RIGHT
         else if (one == "X" && two == "X" && three == "X"){
-            alert("Player X wins");
+            winnerNameSpan.innerHTML = userNameArray[0];
+            displayResultContainer();
         }
         // DOWN
         else if (one == "X" && four == "X" && seven == "X"){
-            alert("Player X wins");
+            winnerNameSpan.innerHTML = userNameArray[0];
+            displayResultContainer();
         }
 
         // ROW 2
         // STRAIGHT
         else if (four == "X" && five == "X" && six == "X"){
-            alert("Player X wins");
+            winnerNameSpan.innerHTML = userNameArray[0];
+            displayResultContainer();
         }
 
         // ROW 3
         // STRAIGHT
         else if (seven == "X" && eight == "X" && nine == "X"){
-            alert("Player X wins");
+            winnerNameSpan.innerHTML = userNameArray[0];
+            displayResultContainer();
         }
 
         // COLUMN 2 
         else if (two == "X" && five == "X" && eight == "X"){
-            alert("Player X wins");
+            winnerNameSpan.innerHTML = userNameArray[0];
+            displayResultContainer();
         }
 
         // COLUMN 3
         else if (three == "X" && six == "X" && nine == "X"){
-            alert("Player X wins");
+            winnerNameSpan.innerHTML = userNameArray[0];
+            displayResultContainer();
         }
 
 
@@ -129,43 +140,56 @@ function checkForValue(currentGrid){
         // ROW 1
         //  DIAGONAL
         if (one == "O" && five == "O" && nine == "O"){
-            alert("Player O wins");
+            winnerNameSpan.innerHTML = userNameArray[1];
+            displayResultContainer();
         }
 
         else if (three == "O" && five == "O" && seven == "O"){
-            alert("Player O wins");
+            winnerNameSpan.innerHTML = userNameArray[1];
+            displayResultContainer();
         }
 
 
         // RIGHT
         else if (one == "O" && two == "O" && three == "O"){
-            alert("Player O wins");
+            winnerNameSpan.innerHTML = userNameArray[1];
+            displayResultContainer();
         }
         // DOWN
         else if (one == "O" && four == "O" && seven == "O"){
-            alert("Player O wins");
+            winnerNameSpan.innerHTML = userNameArray[1];
+            displayResultContainer();
         }
 
         // ROW 2
         // STRAIGHT
         else if (four == "O" && five == "O" && six == "O"){
-            alert("Player O wins");
+            winnerNameSpan.innerHTML = userNameArray[1];
+            displayResultContainer();
         }
 
         // ROW 3
         // STRAIGHT
         else if (seven == "O" && eight == "O" && nine == "O"){
-            alert("Player X wins");
+            winnerNameSpan.innerHTML = userNameArray[1];
+            displayResultContainer();
         }
 
         // COLUMN 2 
         else if (two == "O" && five == "O" && eight == "O"){
-            alert("Player O wins");
+            winnerNameSpan.innerHTML = userNameArray[1];
+            displayResultContainer();
         }
 
         // COLUMN 3
         else if (three == "O" && six == "O" && nine == "O"){
-            alert("Player O wins");
+            winnerNameSpan.innerHTML = userNameArray[1];
+            displayResultContainer();
         }
     }
+}
+
+function displayResultContainer() {
+    let resultContainerFinal = document.querySelector(".result-container");
+    resultContainerFinal.style.display = "flex";
 }
