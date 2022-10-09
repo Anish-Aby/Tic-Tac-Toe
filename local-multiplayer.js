@@ -79,6 +79,7 @@ function checkForValue(currentGrid){
     let nine = document.getElementById("nine").innerHTML;
 
     let winnerNameSpan = document.querySelector(".winner-span");
+    let tieDisplay = document.querySelector(".winner-display");
 
     let inputChoice = currentGrid.innerText;
     console.log(inputChoice);
@@ -186,6 +187,19 @@ function checkForValue(currentGrid){
             winnerNameSpan.innerHTML = userNameArray[1];
             displayResultContainer();
         }
+    }
+
+    if ( (one == "X" || one == "O") &&
+        (two == "X" || two == "O") &&
+        (three == "X" || three == "O") &&
+        (four == "X" || four == "O") &&
+        (five == "X" || five == "O") &&
+        (six == "X" || six == "O") &&
+        (seven == "X" || seven == "O") &&
+        (eight == "X" || eight == "O") &&
+        (nine == "X" || nine == "O")) {
+            tieDisplay.innerHTML = "It's a tie!";
+            displayResultContainer();
     }
 }
 
